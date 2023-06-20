@@ -84,5 +84,3 @@ nextButton.addEventListener('click', nextSlideFunc)
 nextButton.addEventListener('touchstart', nextSlideFunc)
 
 dotsContainer.addEventListener('click', dotsFunc)
-
-const allImageLabels = 
