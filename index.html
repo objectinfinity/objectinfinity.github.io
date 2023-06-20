@@ -26,63 +26,35 @@
 		<p>The object show where 24 contestants battle for a lifetime supply of McDonald's!</p><br>
 		<hr><br>
 		<h2>Meet the (some of the) Contestants</h2><br>
-		<section class="img-container">
-			<div class="slider-wrapper">
-				<div class="slider">
-					<div class="image">
-						<img src="assets/Bagel.png" alt='Bagel' id='slide-1'>
+
+		<div class="carousel">
+			<div class='carousel-track-container'>
+				<ul class="carousel-track">
+					<li class="carousel-slide current-slide">
+						<div><img class='caro-img' src="assets/Acid Ball.png" alt='Acid Ball'></div>
+						<span>Acid Ball</span>
+					</li>
+					<li class="carousel-slide">
+						<div><img class='caro-img' src="assets/Bagel.png" alt='Bagel'></div>
 						<span>Bagel</span>
-					</div>
-					<div class="image">
-						<img src="assets/Bushy.png" alt='Bushy' id='slide-2'>
+					</li>
+					<li class="carousel-slide">
+						<div><img class='caro-img' src="assets/Bushy.png" alt='Bushy'></div>
 						<span>Bushy</span>
-					</div>
-					<div class="image">
-						<img src="assets/Chair.png" alt='Chair' id='slide-3'>
-						<span>Chair</span>
-					</div>
-					<div class="image">
-						<img src="assets/Fishing Rod.png" alt='Fishing Rod' id='slide-4'>
-						<span>Fishing Rod</span>
-					</div>
-					<div class="image">
-						<img src="assets/Flamey.png" alt='Flamey' id='slide-5'>
-						<span>Flamey</span>
-					</div>
-					<div class="image">
-						<img src="assets/Flashlight.png" alt='Flashlight' id='slide-6'>
-						<span>Flashlight</span>
-					</div>
-					<div class="image">
-						<img src="assets/iPad.png" alt='iPad' id='slide-7'>
-						<span>iPad</span>
-					</div>
-					<div class="image">
-						<img src="assets/Steak.png" alt='Steak' id='slide-8'>
-						<span>Steak</span>
-					</div>
-					<div class="image">
-						<img src="assets/Water.png" alt='Water Bottle' id='slide-9'>
-						<span>Water Bottle</span>
-					</div>
-				</div>
-				<div class="slider-nav">
-					<a href="#slide-1" onclick='setSlideNum(1)'></a>
-					<a href="#slide-2" onclick='setSlideNum(2)'></a>
-					<a href="#slide-3" onclick='setSlideNum(3)'></a>
-					<a href="#slide-4" onclick='setSlideNum(4)'></a>
-					<a href="#slide-5" onclick='setSlideNum(5)'></a>
-					<a href="#slide-6" onclick='setSlideNum(6)'></a>
-					<a href="#slide-7" onclick='setSlideNum(7)'></a>
-					<a href="#slide-8" onclick='setSlideNum(8)'></a>
-					<a href="#slide-9" onclick='setSlideNum(9)'></a>
-				</div>
-				<div class="slider-buttons">
-					<a id='back' href='#slide-1' onclick='prevSlide()'><</a>
-					<a id='next' href='#slide-2' onclick='nextSlide()'>></a>
-				</div>
+					</li>
+				</ul>
 			</div>
-		</section><br>
+			<button class='carousel-btn carousel--left is-hidden'><</button>
+			<button class='carousel-btn carousel--right'>></button>
+
+			<div class="carousel-nav">
+				<button class="carousel-indicator current-slide"></button>
+				<button class="carousel-indicator"></button>
+				<button class="carousel-indicator"></button>
+			</div>
+		</div>
+
+		</section><br><br>
 		<h2>Number of Episodes Released:</h2><br>
 		<h3>0</h3><br>
 		<hr>
@@ -99,6 +71,7 @@
 		<p class='foot-text'>(c) 2023 - Goofy Goober Productions<br>Website built by <a href="https://byte127x.github.io">byte127x</a></p>
 	</footer>
 </body>
+<script type="text/javascript" src='script.js'></script>
 </html>
 <script type="text/javascript">
 	var slider_number = 1
